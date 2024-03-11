@@ -1,0 +1,5 @@
+./submit.sh
+Docker is installed.
+Kubernetes (kubectl) is installed.
+WARNING: This version information is deprecated and will be replaced with the output from kubectl version --short. Use --output=yaml|json to get the full version.
+Environment status summary saved to hiring-test-olkule.txt

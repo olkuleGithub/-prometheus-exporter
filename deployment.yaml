@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prom-bitcoin1-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prom-bitcoin1
+  template:
+    metadata:
+      labels:
+        app: prom-bitcoin1
+    spec:
+      containers:
+      - name: prom-bitcoin1
+        image: olkule/prom_bitcoin1:v1.0
+        ports:
+        - containerPort: 8000  # Assuming the metrics are exposed on port 8000
